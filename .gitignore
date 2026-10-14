@@ -1,0 +1,32 @@
+# Tic-Tac-Toe (Wear OS) — files that must NEVER be committed.
+# Anything that can sign a build, unlock a keystore, or identify a
+# personal account stays local. See README.md ("Signing" + "Configuration").
+
+# --- Signing keys and passwords (the critical ones) ---
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+.ks-pass
+config.env
+*.env
+
+# --- Build outputs (rebuilt by build.sh / build-bundle.sh) ---
+*.apk
+*.aab
+*.idsig
+out/
+out-bundle/
+
+# --- Internal Play Console notes ---
+# play-listing.md holds account-specific material (signing fingerprints,
+# store URLs, internal release notes). Keep it local; do not publish it.
+play-listing.md
+
+# --- Editor / OS noise ---
+.DS_Store
+*~
+*.swp
+.idea/
+.vscode/
