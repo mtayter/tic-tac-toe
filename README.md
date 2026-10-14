@@ -153,10 +153,14 @@ privacy policy with the address you want made public.
 
 ## Publishing checklist
 
-1. Add a `LICENSE` file (no license is chosen yet).
+1. License: MIT — see [LICENSE](LICENSE).
 2. Confirm the contact address in `privacy-policy.html` is one you are
    happy to publish.
 3. Keep Play Console notes (listing copy, screenshots, release notes)
    out of the repo — they contain account-specific material.
 4. Back up `release.keystore` + the config password offline before the
    first Play upload.
+
+## License
+
+This project is licensed under the MIT License — see [LICENSE](LICENSE).
