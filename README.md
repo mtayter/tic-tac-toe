@@ -7,7 +7,7 @@ button, no menus, no settings.
 
 Works fully offline. No accounts, no ads, no permissions — not even
 internet access. Game state lives only in memory while you play; nothing
-is saved or transmitted. See `privacy-policy.html` for the full policy.
+is saved or transmitted. See `privacy.html` for the full policy.
 
 - Package: `com.tayter.tictactoe`
 - `minSdk 30` (Wear OS 3+), `targetSdk 36`
@@ -24,7 +24,7 @@ is saved or transmitted. See `privacy-policy.html` for the full policy.
 | `build.sh` | Builds the debug APK (`TicTacToe.apk`) |
 | `build-bundle.sh` | Builds the signed Play AAB (`TicTacToe.aab`) |
 | `install.sh` | First-time setup: config + keystores (run this first) |
-| `privacy-policy.html` | Privacy policy served with the store listing |
+| `privacy.html` | Privacy policy served with the store listing |
 | `app-icon-512.png`, `feature-graphic.png`, `play-*.png` | Store listing graphics / screenshots |
 
 ## Prerequisites
@@ -147,14 +147,14 @@ The app itself has no server side and no accounts.
 
 ## Privacy
 
-Zero permissions, zero data collection. See `privacy-policy.html`.
+Zero permissions, zero data collection. See `privacy.html`.
 When publishing the store listing, fill in the contact address in the
 privacy policy with the address you want made public.
 
 ## Publishing checklist
 
 1. License: MIT — see [LICENSE](LICENSE).
-2. Confirm the contact address in `privacy-policy.html` is one you are
+2. Confirm the contact address in `privacy.html` is one you are
    happy to publish.
 3. Keep Play Console notes (listing copy, screenshots, release notes)
    out of the repo — they contain account-specific material.

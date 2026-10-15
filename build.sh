@@ -4,7 +4,10 @@
 set -e
 set -o pipefail
 
-PROJ="$HOME/workspace/tictactoe"
+# Repo root: this script lives at the repo root, so all repo paths derive
+# from it instead of a hardcoded checkout location.
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJ="$ROOT"
 # Local config (written by ./install.sh) may override tool paths and the
 # debug keystore location. Falls back to the defaults below when absent.
 # Env vars win over the config file: snapshot them before sourcing,

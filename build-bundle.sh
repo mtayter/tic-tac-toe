@@ -1,11 +1,14 @@
 #!/bin/bash
 # AAB packaging for Google Play: aapt2 (proto format) + bundletool + jarsigner.
 # Target API 36 (Wear OS new-app requirement: 35+). minSdk 30 (Wear OS 3+).
-# Output: ~/workspace/tictactoe/TicTacToe.aab (signed with the project's
+# Output: <repo>/TicTacToe.aab (signed with the project's
 # upload key — Play App Signing re-signs on upload).
 set -e
 set -o pipefail
-PROJ="$HOME/workspace/tictactoe"
+# Repo root: this script lives at the repo root, so all repo paths derive
+# from it instead of a hardcoded checkout location.
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJ="$ROOT"
 # Local config (written by ./install.sh) provides tool paths, keystore,
 # alias, and release password. Falls back to the defaults / legacy
 # .ks-pass file below when no config exists.
